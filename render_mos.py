@@ -11,18 +11,18 @@ def main():
     template = env.get_template("mos.html.jinja2")
 
     html = template.render(
-        page_title="MOS 實驗表單 1",
+        page_title="MOS1",
         form_url="http://localhost:8888",
         form_id=1,
         questions=[
             {
-                "title": "問題 1",
-                "audio_path": "wavs/test1.wav",
+                "title": "audio1",
+                "audio_path": "audio/a1.wav",
                 "name": "q1"
             },
             {
-                "title": "問題 2",
-                "audio_path": "wavs/test2.wav",
+                "title": "audio2",
+                "audio_path": "audio/a2.wav",
                 "name": "q2"
             },
         ]
